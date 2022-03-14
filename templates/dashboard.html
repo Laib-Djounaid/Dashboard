@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="static/dashboard.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <header>
+            <h1>Pravan University of Web</h1>
+            <h3>Admin Dashboard</h3>
+    </header>
+    <nav>
+        <img id="logo" src="static/images/usthb.svg">
+    </nav>
+    
+    <button onclick="loadData()">Refresh</button>
+    <div id="espace">
+        <div class="axe"> 
+            <canvas id="bar-chart" height="250" width="500"  ></canvas>
+        </div>
+        <div class="axe"> 
+            <canvas id="pie-chart"  height="250" width="500" ></canvas>
+        </div>
+        <div class="axe"> 
+            <canvas id="radar-chart"  height="400" width="500"></canvas>
+        </div>
+        <div class="axe"> 
+            <canvas id="bar-chart-grouped" height="400" width="500" ></canvas>
+        </div>
+        
+    </div>
+    <footer></footer>
+</body>
+<script src="static/script.js"></script>
+</html>
